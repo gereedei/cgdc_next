@@ -8,21 +8,26 @@ function MainNavigation() {
       collapseOnSelect
       expand="lg"
       bg="dark"
-      className={"bg-prime"}
+      className={classes.cgdc_navbar}
       variant="dark"
     >
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+            <Link href="./">home page</Link>
             <Link href="./" passHref>
-              <Nav.Link>Нүүр хуудас</Nav.Link>
+              <Nav.Link className={classes.nav_link}>Нүүр хуудас</Nav.Link>
             </Link>
             <Link href="./news" passHref>
-              <Nav.Link>Мэдээлэл</Nav.Link>
+              <Nav.Link className={classes.nav_link}>Мэдээлэл</Nav.Link>
             </Link>
 
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+            <NavDropdown
+              title="Dropdown"
+              id="collasible-nav-dropdown"
+              className={classes.nav_link}
+            >
               <Link href="./news" passHref>
                 <NavDropdown.Item>Action</NavDropdown.Item>
               </Link>
