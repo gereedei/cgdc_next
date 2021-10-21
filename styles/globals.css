@@ -18,3 +18,21 @@ body {
   font-size: 1.4rem;
   color: #535353;
 }
+.bg-prime {
+  background-color: #223168 !important;
+}
+.bg-second {
+  background-color: #c3203d !important;
+}
+.bg-gray {
+  background-color: #f6f7f9 !important;
+}
+.c-prime {
+  color: #223168 !important;
+}
+.c-second {
+  color: #c3203d !important;
+}
+.c-gray {
+  color: #f6f7f9 !important;
+}
