@@ -15,14 +15,13 @@ function MainNavigation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link href="./">home page</Link>
+            git{" "}
             <Link href="./" passHref>
               <Nav.Link className={classes.nav_link}>Нүүр хуудас</Nav.Link>
             </Link>
             <Link href="./news" passHref>
               <Nav.Link className={classes.nav_link}>Мэдээлэл</Nav.Link>
             </Link>
-
             <NavDropdown
               title="Dropdown"
               id="collasible-nav-dropdown"
