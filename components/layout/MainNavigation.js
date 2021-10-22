@@ -7,30 +7,28 @@ function MainNavigation() {
     <Navbar
       collapseOnSelect
       expand="lg"
-      bg="dark"
-      className={classes.cgdc_navbar}
+      bg="primary"
       variant="dark"
+      className={classes.cgdc_navbar}
     >
       <Container>
+        <Navbar.Brand href="#home" className="d-lg-none">
+          CGDC
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Link href="./">home page</Link>
-            <Link href="./" passHref>
-              <Nav.Link className={classes.nav_link}>Нүүр хуудас</Nav.Link>
+            <Link href="/" passHref>
+              <Nav.Link>Нүүр хуудас</Nav.Link>
             </Link>
-            <Link href="./news" passHref>
-              <Nav.Link className={classes.nav_link}>Мэдээлэл</Nav.Link>
+            <Link href="/news" passHref>
+              <Nav.Link href="#pricing">Мэдээлэл</Nav.Link>
             </Link>
-
-            <NavDropdown
-              title="Dropdown"
-              id="collasible-nav-dropdown"
-              className={classes.nav_link}
-            >
-              <Link href="./news" passHref>
-                <NavDropdown.Item>Action</NavDropdown.Item>
-              </Link>
+            <Link href="/news/new-news" passHref>
+              <Nav.Link href="#pricing">Мэдээ нэмэх</Nav.Link>
+            </Link>
+            <NavDropdown title="Үйл явдал" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -41,33 +39,9 @@ function MainNavigation() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-            </Nav.Link>
-          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    // <Container>
-    //   <header className={classes.header}>
-    //     <div className={classes.logo}>CGDC website</div>
-    //     <nav>
-    //       <ul>
-    //         <li>
-    //           <Link href="/">Home page</Link>
-    //         </li>
-    //         <li>
-    //           <Link href="/news">all news</Link>
-    //         </li>
-    //         <li>
-    //           <Link href="/news/new-news">Add New News</Link>
-    //         </li>
-    //       </ul>
-    //     </nav>
-    //   </header>
-    // </Container>
   );
 }
 

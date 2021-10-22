@@ -1,0 +1,57 @@
+$primary: #223168;
+$danger: #c3203d;
+
+// White links against a dark background
+.navbar-dark {
+  .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: rgba(255, 255, 255, 0.85) !important;
+      padding: 0.3em 2em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      font-size: 0.875rem;
+      font-weight: 400;
+
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: #c3203d;
+        transition: all 0.32s;
+      }
+
+      &.disabled {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    .show > .nav-link,
+    .nav-link.active {
+      color: white;
+    }
+  }
+
+  .navbar-toggler {
+    color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  .navbar-text {
+    color: rgba(255, 255, 255, 0.85);
+    a,
+    a:hover,
+    a:focus {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

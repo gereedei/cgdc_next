@@ -11,7 +11,8 @@ function HomePage() {
           content="Монгол улс дахь Компанийн засаглалын хөгжлийн төв"
         />
       </Head>
-      <div>home page ni bna aa</div>
+      <div className="text-danger">home page ni bna aa</div>
+      <div className="bg-danger">home page ni bna aa</div>
     </Fragment>
   );
 }

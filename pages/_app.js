@@ -1,4 +1,5 @@
-import "bootstrap/dist/css/bootstrap.css";
+//import "bootstrap/dist/css/bootstrap.css";
+import "../css/bs_override.css";
 import "../styles/globals.css";
 import Layout from "../components/layout/Layout";
 import { useEffect } from "react";

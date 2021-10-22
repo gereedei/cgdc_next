@@ -15,7 +15,7 @@ function NewNews() {
     console.log(data, "news added");
 
     // router.replace; use this if you do not want it to go back with back button
-    router.push("./");
+    router.push("/");
   }
 
   return <NewNewsForm onAddNews={addNewsHandler} />;
